@@ -1,0 +1,7 @@
+version: "3.1"
+services:
+  xplane-openjdk:
+    build: .
+    volumes:
+    - ./:/tmp
+    command: ["mvn", "package"]
